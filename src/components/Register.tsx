@@ -9,7 +9,10 @@ import Container from "@mui/material/Container";
 
 
 const Register : React.FC = () => {
-
+// Add another TextFiled which is about user role
+// When the user clicks SignUp the data will be stored into the store:  dispatch({userData:userData})
+// Make sure to validate user Input
+// After the data is saved navigate to Login
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
