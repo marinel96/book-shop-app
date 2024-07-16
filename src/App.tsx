@@ -8,8 +8,12 @@ import BookList from './components/BookList';
 
 
 
-
+// Specify the type for App component
 function App() {
+// Make sure to apply the filter functionality in two posible ways:
+  // 1. HAndle the filterValue using useContext() hook 
+  // 2. Handle the state at the parent of Header and BookList Components so you can share the state between these components (Careful!!!!, this is called prop drilling)
+  // const [filterValue, setFilterValue] = useState("");
   return (
       <Routes>
         <Route path='/BookList' element={<BookList/>}></Route>
