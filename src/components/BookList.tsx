@@ -17,7 +17,7 @@ function createData(
 ) {
   return { BookName, PublishedYear, Author, Price, Id };
 }
-
+// Create a state which handles the books list to update, create and delete books (for this moment dont worry about user role)
 const rows = [
   createData('Zonja Bovari', 2014, 'Gustav Flober', 900, 1),
   createData('Lahuta e Malesis', 1937, 'At Gjergj Fishta', 1500, 2),
