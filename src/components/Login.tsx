@@ -17,9 +17,21 @@ import Register from './Register';
 const defaultTheme = createTheme();
 
 function Login() {
+
+  // Add a new input about the user role: admin or simple user
+  // Save the email, password and role in local storage
+  // After you save this data on storage I want you to authorize or not user for accessing editBook, createBook, deleteBook.
+  // If user role is admin he cannot add items in cart
+  // Also protect the routes.
+
+  
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
+    //Check if user with this email and password exists in the rudux store
+    // If exists navigate to the landing page
+    // If not show user some errors like "wrong credentials"
+    navigate("bookList");
     console.log({
       email: data.get('email'),
       password: data.get('password'),
