@@ -1,4 +1,5 @@
 import  React from 'react';
+import { Link } from 'react-router-dom';
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -8,6 +9,7 @@ import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
+import BookList from './BookList';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -68,9 +70,9 @@ export default function SearchAppBar() {
           </Typography>
           <Typography>
           <ButtonGroup variant="contained" aria-label="Basic button group">
-          <Button>Book Gallery</Button>
-          <Button>Log in </Button>
-          <Button>Register</Button>/
+          <Button component={Link} to="/BookList" variant="contained" color="primary">BookList</Button>
+          <Button component={Link} to="/Loggin" variant="contained" color="primary">Loggin</Button>
+          <Button component={Link} to="/Register" variant="contained" color="primary">Register</Button>
           </ButtonGroup>
           </Typography>
           <Search>
