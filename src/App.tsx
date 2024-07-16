@@ -15,6 +15,10 @@ function App() {
   // 2. Handle the state at the parent of Header and BookList Components so you can share the state between these components (Careful!!!!, this is called prop drilling)
   // const [filterValue, setFilterValue] = useState("");
   return (
+    // Protect the routes based on user role
+    // Create a page which shows errors like "Page does not exist"
+    // I recomend you to have a look at this scenario that we had before loader: checkAuthToken
+    // Also Implement Child ROUTES, index routes
       <Routes>
         <Route path='/BookList' element={<BookList/>}></Route>
         <Route path='' element={<Header/>}></Route>
