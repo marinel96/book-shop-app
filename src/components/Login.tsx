@@ -16,7 +16,7 @@ import Register from './Register';
 
 const defaultTheme = createTheme();
 
-function SignIn() {
+function Login() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -89,4 +89,4 @@ function SignIn() {
     </ThemeProvider>
 
   );
-}; export default SignIn;
+}; export default Login;
